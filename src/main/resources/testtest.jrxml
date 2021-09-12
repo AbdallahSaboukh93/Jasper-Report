@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.17.0.final using JasperReports Library version 6.17.0-6d93193241dd8cc42629e188b94f9e0bc5722efd  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="testtest" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="56099d74-dfae-4093-bc13-44b0b835a18e">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="cms"/>
+	<parameter name="id" class="java.lang.Long"/>
+	<parameter name="DEPOSIT_DATE" class="java.sql.Date"/>
+	<queryString language="SQL">
+		<![CDATA[select * from cases where
+ (id=$P{id} or id is  null)
+and 
+($P{DEPOSIT_DATE} < cases.DEPOSIT_DATE or  $P{DEPOSIT_DATE} is  null)]]>
+	</queryString>
+	<field name="ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ID"/>
+	</field>
+	<field name="COURT_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="COURT_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="COURT_ID"/>
+	</field>
+	<field name="FILE_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="FILE_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="FILE_ID"/>
+	</field>
+	<field name="CASE_TYPE_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CASE_TYPE_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CASE_TYPE_ID"/>
+	</field>
+	<field name="DEPOSIT_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="DEPOSIT_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="DEPOSIT_DATE"/>
+	</field>
+	<field name="JUDICIAL_YEAR_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="JUDICIAL_YEAR_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="JUDICIAL_YEAR_ID"/>
+	</field>
+	<field name="FIRST_HEARING_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="FIRST_HEARING_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="FIRST_HEARING_DATE"/>
+	</field>
+	<field name="URGENT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="URGENT"/>
+		<property name="com.jaspersoft.studio.field.label" value="URGENT"/>
+	</field>
+	<field name="CASE_STATUS_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CASE_STATUS_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CASE_STATUS_ID"/>
+	</field>
+	<field name="FINANCIAL_STATUS" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="FINANCIAL_STATUS"/>
+		<property name="com.jaspersoft.studio.field.label" value="FINANCIAL_STATUS"/>
+	</field>
+	<field name="HOLD_OPERATIONAL_MODUALTIES" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="HOLD_OPERATIONAL_MODUALTIES"/>
+		<property name="com.jaspersoft.studio.field.label" value="HOLD_OPERATIONAL_MODUALTIES"/>
+	</field>
+	<field name="GOVERNORATE_BRANCHE_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="GOVERNORATE_BRANCHE_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="GOVERNORATE_BRANCHE_ID"/>
+	</field>
+	<field name="CASE_SYMBOL" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="CASE_SYMBOL"/>
+		<property name="com.jaspersoft.studio.field.label" value="CASE_SYMBOL"/>
+	</field>
+	<field name="ACTIVE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="ACTIVE"/>
+		<property name="com.jaspersoft.studio.field.label" value="ACTIVE"/>
+	</field>
+	<field name="SERIAL" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SERIAL"/>
+		<property name="com.jaspersoft.studio.field.label" value="SERIAL"/>
+	</field>
+	<field name="JUDICIAL_YEAR" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="JUDICIAL_YEAR"/>
+		<property name="com.jaspersoft.studio.field.label" value="JUDICIAL_YEAR"/>
+	</field>
+	<field name="CHANGER_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CHANGER_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CHANGER_ID"/>
+	</field>
+	<field name="CHANGE_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="CHANGE_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="CHANGE_DATE"/>
+	</field>
+	<field name="PROCEDURE_HOLD" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="PROCEDURE_HOLD"/>
+		<property name="com.jaspersoft.studio.field.label" value="PROCEDURE_HOLD"/>
+	</field>
+	<field name="FEES_EXEMPTION_REQUEST_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="FEES_EXEMPTION_REQUEST_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="FEES_EXEMPTION_REQUEST_ID"/>
+	</field>
+	<field name="COURT_REGISTER_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="COURT_REGISTER_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="COURT_REGISTER_ID"/>
+	</field>
+	<field name="COURT_PANEL_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="COURT_PANEL_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="COURT_PANEL_ID"/>
+	</field>
+	<field name="JUDGE_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="JUDGE_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="JUDGE_ID"/>
+	</field>
+	<field name="NEXT_HEARING_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="NEXT_HEARING_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="NEXT_HEARING_DATE"/>
+	</field>
+	<field name="LAWYER_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="LAWYER_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="LAWYER_ID"/>
+	</field>
+	<field name="ORIGINAL_CASE_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ORIGINAL_CASE_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ORIGINAL_CASE_ID"/>
+	</field>
+	<field name="EXTERNAL_CASE" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="EXTERNAL_CASE"/>
+		<property name="com.jaspersoft.studio.field.label" value="EXTERNAL_CASE"/>
+	</field>
+	<field name="EXTERNAL_COURT" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="EXTERNAL_COURT"/>
+		<property name="com.jaspersoft.studio.field.label" value="EXTERNAL_COURT"/>
+	</field>
+	<field name="EXTERNAL_PANEL" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="EXTERNAL_PANEL"/>
+		<property name="com.jaspersoft.studio.field.label" value="EXTERNAL_PANEL"/>
+	</field>
+	<field name="CASE_CLASSIFICATION_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CASE_CLASSIFICATION_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CASE_CLASSIFICATION_ID"/>
+	</field>
+	<field name="JUDGMENT_ALLOCATION_STATUS_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="JUDGMENT_ALLOCATION_STATUS_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="JUDGMENT_ALLOCATION_STATUS_ID"/>
+	</field>
+	<field name="SUSPEND" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="SUSPEND"/>
+		<property name="com.jaspersoft.studio.field.label" value="SUSPEND"/>
+	</field>
+	<field name="PAYMENT_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="PAYMENT_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="PAYMENT_DATE"/>
+	</field>
+	<field name="CREATOR_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CREATOR_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CREATOR_ID"/>
+	</field>
+	<field name="IS_LAWER" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="IS_LAWER"/>
+		<property name="com.jaspersoft.studio.field.label" value="IS_LAWER"/>
+	</field>
+	<field name="CONCERNED_PARTY_DEPOSITOR_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CONCERNED_PARTY_DEPOSITOR_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CONCERNED_PARTY_DEPOSITOR_ID"/>
+	</field>
+	<field name="PREV_HEARING_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="PREV_HEARING_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="PREV_HEARING_DATE"/>
+	</field>
+	<field name="CASE_RECEIPTS_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="CASE_RECEIPTS_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="CASE_RECEIPTS_ID"/>
+	</field>
+	<field name="SCHEDULED_HEARINGS_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="SCHEDULED_HEARINGS_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="SCHEDULED_HEARINGS_ID"/>
+	</field>
+	<field name="MANUAL_FILE_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="MANUAL_FILE_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="MANUAL_FILE_ID"/>
+	</field>
+	<field name="REC_SCHEDULED_HEARING_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="REC_SCHEDULED_HEARING_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="REC_SCHEDULED_HEARING_ID"/>
+	</field>
+	<field name="UNDER_DETERMINATION_CAUSES_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="UNDER_DETERMINATION_CAUSES_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="UNDER_DETERMINATION_CAUSES_ID"/>
+	</field>
+	<field name="CREATE_DATE" class="java.sql.Timestamp">
+		<property name="com.jaspersoft.studio.field.name" value="CREATE_DATE"/>
+		<property name="com.jaspersoft.studio.field.label" value="CREATE_DATE"/>
+	</field>
+	<field name="NOTES" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="NOTES"/>
+		<property name="com.jaspersoft.studio.field.label" value="NOTES"/>
+	</field>
+	<field name="JUDGEMENT_HEADERS_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="JUDGEMENT_HEADERS_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="JUDGEMENT_HEADERS_ID"/>
+	</field>
+	<field name="REALLOCATION_NOTES" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="REALLOCATION_NOTES"/>
+		<property name="com.jaspersoft.studio.field.label" value="REALLOCATION_NOTES"/>
+	</field>
+	<field name="PREV_SCHEDULED_HEARING_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="PREV_SCHEDULED_HEARING_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="PREV_SCHEDULED_HEARING_ID"/>
+	</field>
+	<field name="TRANSFER_CASE_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="TRANSFER_CASE_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="TRANSFER_CASE_ID"/>
+	</field>
+	<field name="ORIGINAL_AUT_BRANCHE_MEMBER_ID" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="ORIGINAL_AUT_BRANCHE_MEMBER_ID"/>
+		<property name="com.jaspersoft.studio.field.label" value="ORIGINAL_AUT_BRANCHE_MEMBER_ID"/>
+	</field>
+	<field name="DEPOSITOR_NAME" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="DEPOSITOR_NAME"/>
+		<property name="com.jaspersoft.studio.field.label" value="DEPOSITOR_NAME"/>
+	</field>
+	<field name="DEPOSITOR_NATIONAL_IDENTITY" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="DEPOSITOR_NATIONAL_IDENTITY"/>
+		<property name="com.jaspersoft.studio.field.label" value="DEPOSITOR_NATIONAL_IDENTITY"/>
+	</field>
+	<field name="MANY_APPEAL" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="MANY_APPEAL"/>
+		<property name="com.jaspersoft.studio.field.label" value="MANY_APPEAL"/>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="22" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="57" y="5" width="440" height="30" uuid="7dd5c2fa-82bb-4e7a-ac95-998612aa1f55"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[" Test Report With Parameters"]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="60" splitType="Stretch">
+			<staticText>
+				<reportElement x="440" y="30" width="100" height="30" uuid="fce0bac8-81e3-4da4-a130-6642b4bd2d1d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2eff027d-d92d-4ba3-8c98-cc2ba79955e4"/>
+				</reportElement>
+				<text><![CDATA[DEPOSIT_DATE]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="50" y="0" width="100" height="30" uuid="5d5a6dd1-88a4-4cf4-8bc7-3b54cc766036"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="0" width="100" height="30" uuid="b73d78fa-5390-48bf-8ee5-c6a253fc7b0e"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COURT_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="240" y="0" width="100" height="30" uuid="2d154d24-0156-46ec-b21a-4a1f71dfbe35"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{FILE_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="340" y="0" width="100" height="30" uuid="9c97f3ba-0bad-45d0-8b27-0ff5cf0a8c72"/>
+				<textElement>
+					<font size="16"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{JUDICIAL_YEAR_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="440" y="0" width="100" height="30" uuid="ae0d1cbe-62eb-4784-a154-29bade4e9ad5">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2eff027d-d92d-4ba3-8c98-cc2ba79955e4"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{DEPOSIT_DATE}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="142" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
